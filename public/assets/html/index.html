@@ -7,36 +7,107 @@
     <title>Paul Cwik's Portfolio</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="../css/lightmode.css">
-
+    <!-- <link rel="stylesheet" href="../css/lightmode.css" />
+    <link disabled id="dark-reader" rel="stylesheet" href="../css/darkmode.css"> -->
+    <link id="myCSS-ID" rel="stylesheet" href="../css/lightmode.css">
 </head>
 
 <body>
     <!-- NAVBAR CONTAINS: LOGO, About Me, Portfolio, Contact, Day/Night Toggler -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="../images/try6.png" width="30" height="30">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Index<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Portfolio</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
-              </div>
-            </div>
-          </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light lm-NavBar navBar-bottom">
+        <a class="navbar-brand" href="#">
+            <img src="../images/try7.png" width="30" height="30"> Paul Cwik Designs
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">ABOUT ME<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">PORTFOLIO</a>
+                <a class="nav-item nav-link" href="#">CONTACT ME</a>
+                <!-- Rectangular switch -->
+                <!-- <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider dark-mode" id="slider-mode" name="dark_light" onclick="toggleDarkLight()"></span>
+                </label> -->
 
+                <!-- <a class="nav-item nav-link dark-mode" id="body" href="#" name="dark_light" onclick="toggleDarkLight()"
+                    title="Toggle dark/light mode">Dark Mode</a> -->
+                <script type="text/javascript">
+                    // function toggleDarkLight() {
+                    //     var body = document.getElementById("slider-mode");
+                    //     var currentClass = body.className;
+                    //     body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+                    // }
+
+                    // function dark_toggle() {
+                    //     var el1 = document.getElementById("dark-reader");
+                    //     if (el1.disabled) {
+                    //         el1.disabled = false;
+                    //         localStorage.setItem("darkreader", "enabled");
+                    //     } else {
+                    //         el1.disabled = true;
+                    //         localStorage.setItem("darkreader", "disabled");
+                    //     }
+                    // }
+                </script>
+            </div>
+        </div>
+    </nav>
+    <div class="container AboutMe">
+        <div class="row">
+            <!-- <div class="col-md-2"> -->
+                <!-- Left spacing -->
+            <!-- </div> -->
+            <div class="col">
+                <!-- About Me Container -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Image goes here -->
+                            <img src="https://via.placeholder.com/150" id="myPic">
+                        </div>
+                        <div class="col-md-9 aboutMeTextContainer">
+                            <!-- Information regarding me -->
+                            <h2 class="aboutMeHeader">
+                                About Paul Cwik
+                            </h2>
+                            <!-- <hr class="horizontalRules"> -->
+                            <div class="mernListContainer">
+                                <div class="row" id="mongoDBList">
+                                        <img src="../images/mongoDB.png" class="col-sm-4 mernPictures" id="mongoImg">
+                                        <span class="col-sm-8" id="aboutMongoDB">I am learned in the art of NoSQL based database systems.  I have also studied some MySQL along with sequelize</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- <div class="col-md-2"> -->
+                            <!-- right spacing -->
+            <!-- </div> -->
+        </div>
+    </div>
 </body>
+
 
 </html>
