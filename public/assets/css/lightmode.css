@@ -16,6 +16,7 @@
 }
 
 #myPic {
+    justify-self: center;
     align-content: center;
     justify-content: center;
     border: .5rem solid orange !important;
